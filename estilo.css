@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  /*em
+    se adapta bem a diferentes dispositivos e tamanhos de tela,
+     garantindo que o conteúdo permaneça legível
+     e visualmente agradável em smartphones, tablets, laptops e desktops.
+    */
+  padding: 1em 0;
+  /*
+    1em fonte 16px superior e inferior  - 0 esquerdo e direito
+    */
+  text-align: center;
+}
+
+main {
+  padding: 15px;
+}
+
+.galeria {
+  display: flex; /*deixa os elementos flexíveis, ou seja, os elementos ficaram lado a lado*/
+  flex-wrap: wrap; /* garante que, se a tela for muito estreita para exibir todos os artistas lado a lado, os artistas "quebrarão" para a próxima linha*/
+  justify-content: space-around; /*com espaço igual ao redor de cada item*/
+}
+
+.artista {
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);/*Sombra de fundo*/
+  overflow: hidden;
+  /*Imagem estava vazando utilizar overflow
+     qualquer conteúdo que exceda os limites desse elemento 
+     (tanto na largura quanto na altura) é cortado e fica invisível. 
+     É como se você estivesse colocando uma tampa sobre o elemento, impedindo que nada vaze para fora.
+    */
+}
+
+.artista img {
+  width: 100%;
+  height: 330px;
+
+  object-fit: fill;
+  
+}
+
+.artista h2 {
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2em; /*1.2 * 16 = 19.2px */
+}
+
+.artista p {
+  /*0 TOP, segundo 10px direito e esquerdo, terceiro 10px INFERIOR*/
+  padding: 0 10px 10px;
+  margin: 0;
+  font-size: 0.9em; /*0.9 * 16px = 14.4px*/
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed; /*deixa os elementos do footer fixo, ou seja, ao utilizar scroll do mouse o rodapé */
+  bottom: 0;
+  width: 100%;
+}
