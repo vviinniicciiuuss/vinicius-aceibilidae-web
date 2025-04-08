@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
     <title>Galeria de Artistas Musicais</title>
 </head>
+
 <body>
+    <header>
+        <h1>Artistas Musicais que Inspiram</h1>
+    </header>
 
-<header>
-    <h1>Artistas Musicais que inspiram</h1>
-</header>
+    <main>
+        <section class="galeria">
+            <!--Artista-->
+            <div class="artista artista-beyonce">
+                <img src="./img/beyonce.jpg"
+                    title=" Cantora Beyoncé"
+                    alt="Beyoncé Cantora famosa americana.">
+                <h2>Beyoncé</h2>
+                <p>Cantora, compositora e atriz americana.</p>
+                <audio id="audioBeyonce" src="./audio/Beyonce.mp3"></audio>
+            </div>
 
-<main>
-<section class="galeria">
-<div class="artista artista-beyonce">
-<img src="./img/beyonce.jpg" title="Cantora Beyoncé"  alt="Imagem Cantora Beyoncé">
-<h2>
-    Beyoncé
-</h2>
-<p>cantora, compositora e atriz americana.</p>
-<audio id="audioBeyonce" src="./audio/Beyonce.mp3"></audio>
+            <!--Artista-->
+            <div class="artista artista-michael">
+                <img src="./img/MichaelJackson.png"
+                    title="Cantor Michael Jackson "
+                    alt="Michael Jackson cantor, Rei do Pop">
+                <h2>Michael Jackson</h2>
+                <p>Rei do Pop, cantor, dançarino e compositor.</p>
+                <audio id="audioMichael" src="./audio/MichaelJackson.mp3"></audio>
+            </div>
 
-</div>
+            <!--Artista-->
+            <div class="artista elton-jonh">
+                <img src="./img/EltonJohn.jpg" title="Cantor Elton John "
+                    alt="Elton John Cantor, pianista e compositor britânico ">
+                <h2>Elton John</h2>
+                <p>Cantor, pianista e compositor britânico.</p>
+                <audio id="audioElton" src="./audio/EltonJohn.wav"></audio>
+            </div>
 
+            <!--Artista-->
+            <div class="artista adele">
+                <img src="./img/Adele.jpg"
+                    title="Cantora Adele"
+                    alt="Adele Cantora e compositora">
+                <h2>Adele</h2>
+                <p>Cantora e compositora britânica.</p>
+                <audio id="audioAdele" src="./audio/Adele.wav"></audio>
+            </div>
 
+        </section>
 
-</section>
+    </main>
 
-</main>
-    
+    <footer>
+        <p>© 2025 Professor: Rafael Morales de Lima</p>
+    </footer>
+   <!--script serve para ligar html com javascript-->
+
 </body>
+
 </html>
